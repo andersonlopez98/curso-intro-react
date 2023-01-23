@@ -4,10 +4,10 @@ import { TodoContext } from "../../TodoContext/index";
 import './TodoCounter.css'
 
 const TodoCounter = () => {
-    const { total, completed } =  useContext(TodoContext)
+    const { totalTodos, completedTodos } =  useContext(TodoContext)
 
     return (
-        <h2 className="TodoCounter" >Has Completado {completed} de {total} TODOs</h2>
+        <h2 className="TodoCounter" >Has Completado {completedTodos} de {totalTodos} TODOs</h2>
     );
 }
 
